@@ -22,8 +22,8 @@ namespace GoogleCalendarIntegration.Controllers
         {
             UserCredential credential;
 
-            var filePath = Path.Combine(_env.WebRootPath, "client_secret.json");
-            var credPath = Path.Combine(_env.WebRootPath, "token.json");
+            var filePath = Path.Combine(_env.ContentRootPath, "config", "client_secret.json");
+            var credPath = Path.Combine(_env.ContentRootPath, "config", "token.json");
 
             using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
             {
