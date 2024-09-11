@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+
+<h1>Error</h1>
+<p>Sorry, something went wrong while processing your request.</p>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        <strong>Error Details:</strong> @ViewBag.Error
+    </div>
+}
+<a href="@Url.Action("Index", "Calendar")" class="btn btn-primary">Go Back to Calendar</a>
