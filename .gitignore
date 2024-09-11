@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /GoogleCalendarIntegration/wwwroot/token.json
 /GoogleCalendarIntegration/wwwroot/client_secret.json
+/GoogleCalendarIntegration/config/client_secret.json
+/GoogleCalendarIntegration/config/token.json/Google.Apis.Auth.OAuth2.Responses.TokenResponse-user
