@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Calendar Events";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- Link to create a new event -->
+<a href="@Url.Action("CreateEvent")" class="btn btn-primary">Create New Event</a>
+
+@if (ViewBag.Events != null && ViewBag.Events.Count > 0)
+{
+    <ul>
+        @foreach (var ev in ViewBag.Events as List<string>)
+        {
+            <li>@ev</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No events to display.</p>
+}
